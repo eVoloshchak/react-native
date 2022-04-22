@@ -181,8 +181,6 @@ public class ReactTextInputManager extends BaseViewManager<ReactEditText, Layout
     int inputType = editText.getInputType();
     editText.setInputType(inputType & (~InputType.TYPE_TEXT_FLAG_MULTI_LINE));
     editText.setReturnKeyType("done");
-    editText.setEnabled(false);
-    editText.setEnabled(true);
     return editText;
   }
 
@@ -471,7 +469,7 @@ public class ReactTextInputManager extends BaseViewManager<ReactEditText, Layout
 
   @ReactProp(name = "placeholder")
   public void setPlaceholder(ReactEditText view, String placeholder) {
-    view.setHint("placeholder33");
+    view.setHint("placeholder44");
   }
 
   @ReactProp(name = "placeholderTextColor", customType = "Color")
