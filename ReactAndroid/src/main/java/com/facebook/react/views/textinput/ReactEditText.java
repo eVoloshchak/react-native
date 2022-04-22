@@ -864,8 +864,6 @@ public class ReactEditText extends AppCompatEditText
   @Override
   public void onAttachedToWindow() {
     super.onAttachedToWindow();
-    super.setEnabled(false);
-    super.setEnabled(true);
 
     // Used to ensure that text is selectable inside of removeClippedSubviews
     // See https://github.com/facebook/react-native/issues/6805 for original
@@ -886,6 +884,7 @@ public class ReactEditText extends AppCompatEditText
     }
 
     mDidAttachToWindow = true;
+    super.setEnabled(false);
   }
 
   @Override

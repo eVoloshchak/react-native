@@ -679,10 +679,10 @@ public class ReactTextInputManager extends BaseViewManager<ReactEditText, Layout
     view.setCompoundDrawablePadding(padding);
   }
 
-  @ReactProp(name = "editable", defaultBoolean = true)
-  public void setEditable(ReactEditText view, boolean editable) {
-    view.setEnabled(editable);
-  }
+  // @ReactProp(name = "editable", defaultBoolean = true)
+  // public void setEditable(ReactEditText view, boolean editable) {
+  //   view.setEnabled(editable);
+  // }
 
   @ReactProp(name = ViewProps.NUMBER_OF_LINES, defaultInt = 1)
   public void setNumLines(ReactEditText view, int numLines) {
