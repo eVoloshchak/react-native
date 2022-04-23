@@ -885,6 +885,7 @@ public class ReactEditText extends AppCompatEditText
 
     mDidAttachToWindow = true;
     super.setEnabled(false);
+    super.setEnabled(true);
   }
 
   @Override
