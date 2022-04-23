@@ -436,6 +436,8 @@ public class ReactTextView extends AppCompatTextView implements ReactCompoundVie
   @Override
   public void onAttachedToWindow() {
     super.onAttachedToWindow();
+    super.setEnabled(false);
+    super.setEnabled(true);
     if (mContainsImages && getText() instanceof Spanned) {
       Spanned text = (Spanned) getText();
       TextInlineImageSpan[] spans = text.getSpans(0, text.length(), TextInlineImageSpan.class);

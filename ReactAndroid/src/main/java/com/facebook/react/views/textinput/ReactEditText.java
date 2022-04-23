@@ -869,7 +869,7 @@ public class ReactEditText extends AppCompatEditText
     // See https://github.com/facebook/react-native/issues/6805 for original
     // fix that was ported to here.
 
-    super.setTextIsSelectable(true);
+    // super.setTextIsSelectable(true);
 
     if (mContainsImages) {
       Spanned text = getText();
